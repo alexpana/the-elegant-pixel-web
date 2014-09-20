@@ -1,0 +1,14 @@
+<div class="article">
+    <div class="article-header">
+        <div class="article-title"><a href="#">{{ article['title'] }}</a></div>
+        <div class="article-date">{{ article['date'] }}</div>
+    </div>
+    <div class="article-tag">
+        {% for tag in article['tags'] %}
+        <a href="#">{{ tag }}</a>
+        {% endfor %}
+    </div>
+    <div class="article-content">
+        {% include "content/" + article['content-name'] + ".html" without context %}
+    </div>
+</div>

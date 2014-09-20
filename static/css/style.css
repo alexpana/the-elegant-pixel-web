@@ -64,7 +64,7 @@ div#banner {
 	min-width: 840px;
 }
 
-#col-articles {
+#col-content {
 	width: 600px;
 	min-width: 600px;
 	padding-right: 40px;
@@ -78,7 +78,11 @@ div#banner {
 	overflow: hidden;
 }
 
-#quote {
+.widget {
+    margin-bottom: 45px;
+}
+
+#daily-quote {
 	border-left: 3px solid #666;
 }
 
@@ -99,6 +103,19 @@ div#banner {
 	color: #666;
 	margin-left: 8px;
 	margin-top: 10px;
+}
+
+#latest-articles {
+	font-family: "SourceSansPro-Regular";
+	font-size: 0.8em;
+	color: #999;
+	padding-bottom: 5px;
+}
+
+#latest-articles-title {
+	font-family: "BebasNeue";
+	font-size: 1.4em;
+	color: #999;
 }
 
 .article {
@@ -132,7 +149,7 @@ div#banner {
 	overflow: hidden;
 }
 
-.article-tags {
+.article-tag {
 	margin-top: 5px;
 	padding-bottom: 3px;
 
@@ -148,18 +165,21 @@ div#banner {
 	color: #999;
 }
 
-div#col-latest {
-	margin-top: 45px;
-	font-family: "SourceSansPro-Regular";
-	font-size: 0.8em;
-	color: #999;
-	padding-bottom: 5px;
+.article-list-item {
+    height: 50px;
 }
 
-div#col-latest-title {
-	font-family: "BebasNeue";
-	font-size: 1.4em;
-	color: #999;	
+.article-list-item-date {
+    font-family: "BebasNeue";
+	font-size: 1.2em;
+	color: #999;
+	margin-right: 10px;
+}
+
+.article-list-item-title {
+    font-family: "BebasNeue";
+	font-size: 1.8em;
+	color: #999;
 }
 
 /* Article TITLE links */
@@ -182,7 +202,7 @@ div.article-title a:active {}
 
 /* Article TAGS links */
 
-div.article-tags a {
+div.article-tag a {
 	text-decoration: none;
 	color: #777;
 	margin-top: 2px;
@@ -191,32 +211,34 @@ div.article-tags a {
 	padding-right: 5px;
 }
 
-div.article-tags a:link {}
+div.article-tag a:link {
+    text-decoration: none;
+}
 
-div.article-tags a:visited {}
+div.article-tag a:visited {}
 
-div.article-tags a:hover {
+div.article-tag a:hover {
 	border-radius: 2px;
 	background-color: #282828;
 	padding-bottom: 0px;
 	box-shadow: inset 0px 1px 2px #1B1B1B;
 }
 
-div.article-tags a:active {}
+div.article-tag a:active {}
 
 /* SIDEBAR links */
 
-div#col-sidebar a {
+div#col_sidebar, a {
 	text-decoration: none;
-	color: #999;
+	color: #23a9e1;
 }
 
-div#col-sidebar a:link {}
+div#col_sidebar, a:link {}
 
-div#col-sidebar a:visited {}
+div#col_sidebar, a:visited {}
 
-div#col-sidebar a:hover {
+div#col_sidebar, a:hover {
     border-bottom: 1px #23a9e1 dotted;
 }
 
-div#col-sidebar a:active {}
+div#col_sidebar, a:active {}

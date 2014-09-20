@@ -1,0 +1,10 @@
+<div class="widget" id="latest-articles">
+    <div id="latest-articles-title">Latest Articles</div>
+    {% for article in context['latest_articles'] %}
+    <div><a href="#">{{ article['title'] }}</a></div>
+    {% endfor %}
+
+    {% if context['has_more_articles'] %}
+    <div><a href="#">more...</a></div>
+    {% endif %}
+</div>
