@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 def get_context(view):
     return {
-        "quote": db.quotes.find_one(),
+        "quote": db.quotes.find()[1],
         "latest_articles": db.articles.find().limit(5).sort("date"),
         "has_more_articles": db.articles.find().count() > 5,
         "view": view

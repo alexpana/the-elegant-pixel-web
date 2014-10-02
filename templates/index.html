@@ -4,12 +4,14 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
     <link href="{{ url_for('static', filename='css/markdown.css') }}" rel="stylesheet"/>
 
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.png') }}"/>
     <title>The Elegant Pixel</title>
 </head>
 
 <body>
-<div id="banner">THE ELEGANT PIXEL</div>
+{% include "components/component_header.html" %}
 
 <div id="content">
     <div id="col-content">

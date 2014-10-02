@@ -28,15 +28,15 @@
 
 body {
 	background-color: #333;
+	/*
+	background-image: url("../images/gray_noise.png");
+	background-attachment: fixed;
+	*/
 	color: #999;
 	margin: 0px;
 }
 
-div#banner {
-	font-family: "BebasNeue";
-	font-size: 4em;
-	text-shadow: 0px 1px #101010;
-
+div#header {
 	/* Prevent text wrap */
 	white-space: nowrap;		
 	overflow: visible;
@@ -44,15 +44,69 @@ div#banner {
 	width: 100%;
 	min-width: 800px;
 
-	color: #333333;
-	margin-top: 20px;
-	height: 100px;
-	line-height: 100px;
-	text-align: center;
-	background-color: #23a9e1;
-	vertical-align: middle;
+	color: #444444;
+	margin-top: 0px;
+	height: 76px;
+	background-color: #242424;
+	opacity: 0.6;
+}
 
-	box-shadow: 0px 0px 8px #1A1A1A;
+div#header_content {
+    height: 100%;
+
+    line-height: normal;
+
+    width: 800px;
+
+    margin-left: auto;
+	margin-right: auto;
+
+	vertical-align: center;
+}
+
+div#header_logo {
+
+    margin-top: 22px;
+
+    float: left;
+	font-family: "BebasNeue";
+
+	font-size: 26px;
+
+    color: #BCBCBC;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul#header_nav {
+    float: right;
+    display: table-row;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-top: 26px;
+}
+
+ul#header_nav li {
+    width: 80px;
+    display: table-cell;
+    list-style-type: none;
+    text-align: center;
+    color: #666;
+}
+
+ul#header_nav li.active {
+    color: #cdcdcd;
+}
+
+div.header_link_active {
+    color: #cdcdcd;
+}
+
+div.header_link_inactive {
+    color: #666;
 }
 
 #content {
@@ -83,16 +137,17 @@ div#banner {
 }
 
 #daily-quote {
-	border-left: 3px solid #666;
 }
 
 #quote-text {
 	/*font-family: "Lato-LightItalic";*/
 	font-family: Arial;
-	font-style: italic;;
+	font-style: italic;
 	font-size: 0.8em;
 	color: #999;
-	margin-left: 8px;
+    float: right;
+    width: 185px;
+    margin-bottom: 5px;
 }
 
 #quote-author {
@@ -102,7 +157,21 @@ div#banner {
 	font-size: 0.8em;
 	color: #666;
 	margin-left: 8px;
-	margin-top: 10px;
+	margin-top: 0px;
+}
+
+div#quote_symbol {
+    font-family: "PT Sans";
+    font-size: 40px;
+    float: left;
+    width: 10px;
+    margin-top: -14px;
+    color: #666666;
+}
+
+div#quote_content {
+    float: right;
+    width: 195px;
 }
 
 #latest-articles {
@@ -134,7 +203,7 @@ div#banner {
 
 .article-title {
 	/*color: #999;*/
-	color: #23a9e1;
+	color: #e1a923;
 	text-shadow: 0px 1px 1px #111;
 	width: 475px;
 	float-left;
@@ -230,7 +299,7 @@ div.article-tag a:active {}
 
 div#col_sidebar, a {
 	text-decoration: none;
-	color: #23a9e1;
+	color: #D46C3B;
 }
 
 div#col_sidebar, a:link {}
@@ -238,7 +307,31 @@ div#col_sidebar, a:link {}
 div#col_sidebar, a:visited {}
 
 div#col_sidebar, a:hover {
-    border-bottom: 1px #23a9e1 dotted;
+    border-bottom: 1px #D46C3B dotted;
 }
 
 div#col_sidebar, a:active {}
+
+ul#header_hav li a {
+	text-decoration: none;
+	color: #777;
+	margin-top: 2px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ul#header_hav, li, a:link {
+    text-decoration: none;
+}
+
+ul#header_hav a:visited {}
+
+ul#header_hav a:hover {
+	border-radius: 2px;
+	background-color: #282828;
+	padding-bottom: 0px;
+	box-shadow: inset 0px 1px 2px #1B1B1B;
+}
+
+ul#header_hav a:active {}
