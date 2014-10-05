@@ -288,11 +288,11 @@ div#col-sidebar a:link {
 
 div#col-sidebar a:visited {
 	text-decoration: none;
-	color: #D46C3B;
+	color: #509ebe;
 }
 
 div#col-sidebar a:hover {
-    border-bottom: 1px #D46C3B dotted;
+    border-bottom: 1px #509ebe dotted;
 }
 
 div#col-sidebar a:active {}
