@@ -81,36 +81,6 @@ div#header_logo {
     vertical-align: middle;
 }
 
-ul#header_nav {
-    float: right;
-    display: table-row;
-    font-family: "PT Sans";
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 0px;
-    margin-top: 26px;
-}
-
-ul#header_nav li {
-    width: 80px;
-    display: table-cell;
-    list-style-type: none;
-    text-align: center;
-    color: #666;
-}
-
-ul#header_nav li.active {
-    color: #cdcdcd;
-}
-
-div.header_link_active {
-    color: #cdcdcd;
-}
-
-div.header_link_inactive {
-    color: #666;
-}
-
 #content {
 	margin-left: auto;
 	margin-right: auto;
@@ -302,7 +272,9 @@ div#footer {
     font-size: 12px;
 }
 
-/* SIDEBAR links */
+/*
+ * SIDEBAR links
+ */
 
 div#col_sidebar a {
 	text-decoration: none;
@@ -325,8 +297,35 @@ div#col-sidebar a:hover {
 
 div#col-sidebar a:active {}
 
-ul#header_hav li a {
-	text-decoration: none;
+/*
+ *  Header navigation
+ */
+
+ul#header-nav {
+    float: right;
+    display: table-row;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-top: 26px;
+}
+
+ul#header-nav li {
+    width: 80px;
+    display: table-cell;
+    list-style-type: none;
+    text-align: center;
+    color: #666;
+    margin-left: 0px;
+}
+
+ul#header-nav li.active {
+    color: #cdcdcd;
+}
+
+ul#header-nav a {
+    text-decoration: none;
 	color: #777;
 	margin-top: 2px;
 	padding-top: 3px;
@@ -334,20 +333,23 @@ ul#header_hav li a {
 	padding-right: 5px;
 }
 
-ul#header_hav, li, a:link {
-    text-decoration: none;
+ul#header-nav a.active {
+	color: #cdcdcd;
 }
 
-ul#header_hav a:visited {}
+ul#header-nav a:visited {}
 
-ul#header_hav a:hover {
-	border-radius: 2px;
-	background-color: #282828;
-	padding-bottom: 0px;
-	box-shadow: inset 0px 1px 2px #1B1B1B;
+ul#header-nav a:hover {
+	border-radius: 1px;
+	background-color: #111;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*box-shadow: inset 0px 1px 2px #0B0B0B;*/
 }
 
-ul#header_hav a:active {}
+ul#header-nav a:active {}
 
 /*
  *  Footer component
